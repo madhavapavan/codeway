@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transparent Navbar with Full-Screen Banner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="banner">
+        <img src="banner.jpg" alt="Banner Image" id="banner-image">
+        <div class="banner-text">
+            
+          <h1>Welcome to </h1>
+          <p>The world of tourism!</p>
+        </div>
+        <nav class="navbar">
+          <div class="left">
+            <span class="logo">Travel</span>
+          </div>
+          <div class="right">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Discover</a></li>
+              <li><a href="#">Places</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="banner-overlay">
+            <button class="scroll-down-button" onclick="scrollToMain()">
+              <span class="arrow">&#9660;</span> Scroll Down
+            </button>
+          </div>
+          
+          
+      </header>
+      
+      <main>
+        <div class="pics">
+                    <section>
+
+            <div class="card">
+            <div class="card__img">  
+              <img src="https://images.unsplash.com/photo-1486299267070-83823f5448dd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Big Ben">
+                 <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>4.5</span>
+              <div class="card__overlay">
+                <h2>London</h2>
+                <p>Big Ben</p>
+              </div>
+              </div>
+            </div>
+                <div class="card">
+            <div class="card__img">  
+              <img src="https://images.unsplash.com/photo-1581010864468-c972b8705439?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Eiffel Tower">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>5</span>
+              <div class="card__overlay">
+                <h2>Paris</h2>
+                <p>Eiffel Tower</p>
+              </div>
+              </div>
+            </div>
+                <div class="card">
+            <div class="card__img">  
+              <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1096&q=80" alt="Colosseum">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>4.7</span>
+              <div class="card__overlay">
+                <h2>Rome</h2>
+                <p>Colosseum</p>
+              </div>
+              </div>
+            </div>
+                <div class="card">
+            <div class="card__img">  
+              <img src="https://images.unsplash.com/photo-1581473483413-313a5afffb08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=714&q=80" alt="Pisa Tower">
+                    <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>4.3</span>
+              <div class="card__overlay">
+                <h2>Pisa</h2>
+                <p>Pisa Tower</p>
+              </div>
+              </div>
+            </div>
+                <div class="card">
+            <div class="card__img">  
+              <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80" alt="">
+                   <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>4.8</span>
+              <div class="card__overlay">
+                <h2>New York</h2>
+                <p>Statue of Liberty</p>
+              </div>
+              </div>
+            </div>
+                <div class="card">
+            <div class="card__img">  
+              <img src="https://images.unsplash.com/photo-1527915676329-fd5ec8a12d4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80" alt="Sydney Opera House">
+                  <span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+          </svg>5</span>
+              <div class="card__overlay">
+                <h2>Sydney</h2>
+                <p>Sydney Opera House</p>
+              </div>
+              </div>
+            </div>
+          
+          </section>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-text">
+          &copy; 2024 Your Website Name. All rights reserved. | Designed by <a href="#" class="footer-link">Your Name</a>
+        </div>
+        <div class="footer-links">
+          <a href="#" class="footer-link">Home</a> |
+          <a href="#" class="footer-link">About Us</a> |
+          <a href="#" class="footer-link">Services</a> |
+          <a href="#" class="footer-link">Contact Us</a>
+        </div>
+        <div class="social-icons">
+          Follow us: 
+          <a href="#" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M22 0H2C0.897 0 0 0.897 0 2v20c0 1.103 0.897 2 2 2h20c1.103 0 2-0.897 2-2V2C24 0.897 23.103 0 22 0zM19.5 11.863v-0.773c0-4.352-3.528-7.881-7.88-7.881H7.5v1.788h3.121c2.769 0 5.018 2.249 5.018 5.018v0.773H12v1.788h3.641c0.276 0 0.5-0.224 0.5-0.5v-2.798h1.359L17.5 11.863H19.5zM18.5 6.25c0-0.276-0.224-0.5-0.5-0.5H16.5v1.5h1.5c0.276 0 0.5-0.224 0.5-0.5zM22 22H2V2h20l0.001 20z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zM17.256 16.919c-0.403 0.183-0.841 0.305-1.3 0.361 0.468-0.281 0.829-0.726 1.001-1.258-0.44 0.26-0.935 0.448-1.459 0.548-0.419-0.448-1.016-0.729-1.676-0.729-1.271 0-2.302 1.031-2.302 2.302 0 0.181 0.019 0.356 0.055 0.527-1.917-0.096-3.618-1.016-4.748-2.413-0.198 0.341-0.311 0.736-0.311 1.156 0 0.798 0.407 1.502 1.027 1.915-0.378-0.012-0.733-0.115-1.043-0.288 0 0.01 0 0.019 0 0.028 0 1.115 0.793 2.048 1.847 2.262-0.193 0.053-0.396 0.082-0.606 0.082-0.148 0-0.291-0.014-0.433-0.041 0.289 0.903 1.123 1.561 2.114 1.578-0.776 0.607-1.756 0.97-2.821 0.97-0.184 0-0.367-0.011-0.548-0.033 1.006 0.645 2.202 1.022 3.484 1.022 4.181 0 6.474-3.473 6.474-6.476 0-0.098-0.002-0.195-0.006-0.292 0.444-0.321 0.831-0.722 1.134-1.179z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 5.308 3.438 9.814 8.201 11.436-0.12-1.042-0.234-2.641 0.045-3.783 0.254-1.085 1.641-6.885 1.641-6.885s-0.416-0.842-0.416-2.087c0-1.955 1.136-3.423 2.54-3.423 1.198 0 1.779 0.9 1.779 1.975 0 1.205-0.767 3.004-1.162 4.676-0.333 1.441 0.704 2.613 2.102 2.613 2.526 0 4.479-2.662 4.479-6.52 0-2.712-1.948-4.64-4.748-4.64-3.225 0-5.1 2.419-5.1 4.92 0 0.981 0.338 1.628 0.872 2.125 0.242 0.281 0.277 0.416 0.195 0.727-0.06 0.249-0.196 0.833-0.252 1.066-0.083 0.317-0.336 0.542-0.657 0.542-0.801 0-1.442-0.848-1.442-2.085 0-1.364 0.253-2.401 0.253-2.422 0.116-0.469-0.302-0.851-0.735-0.851-0.621 0-1.091 0.743-1.091 1.615 0 0.987 0.168 1.65 0.168 1.65s-0.705 2.954-0.828 3.493c-0.134 0.637-0.393 1.346-0.626 1.803 0.469 0.146 0.965 0.225 1.474 0.225 3.565 0 6.001-2.986 6.001-6.635C24 5.373 18.627 0 12 0z"/>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </main>
+        
+      <script src="script.js"></script>
+      
+
+</body>
+</html>
